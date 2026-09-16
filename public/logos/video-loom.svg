@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="g1" x1="210" y1="220" x2="800" y2="790" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#4F46E5"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="220" y1="760" x2="780" y2="250" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#06B6D4"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+    <linearGradient id="g3" x1="310" y1="210" x2="760" y2="780" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#EC4899"/>
+      <stop offset="1" stop-color="#F43F5E"/>
+    </linearGradient>
+
+    <!-- subtle shadow only around the mark; canvas stays transparent -->
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#111827" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#shadow)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Upper warp ribbon -->
+    <path d="M 258 292
+             C 400 292, 492 350, 622 430
+             C 694 474, 748 506, 800 530"
+          stroke="url(#g1)" stroke-width="120"/>
+
+    <!-- Lower warp ribbon -->
+    <path d="M 258 732
+             C 400 732, 492 674, 622 594
+             C 694 550, 748 518, 800 494"
+          stroke="url(#g2)" stroke-width="120"/>
+
+    <!-- Shuttle / woven crossing ribbon -->
+    <path d="M 306 512
+             C 390 432, 468 390, 554 390
+             C 642 390, 690 444, 760 512
+             C 690 580, 642 634, 554 634
+             C 468 634, 390 592, 306 512"
+          stroke="url(#g3)" stroke-width="86"/>
+  </g>
+
+  <!-- Crisp central play cut: transparent negative-space feel created with a light neutral fill.
+       This is intentionally small; the surrounding mark remains the dominant icon. -->
+  <path d="M 514 458 L 514 566 L 610 512 Z"
+        fill="#FFFFFF" fill-opacity="0.96"/>
+</svg>

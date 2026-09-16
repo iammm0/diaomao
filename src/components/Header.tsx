@@ -5,10 +5,21 @@ import { site } from '@/data/site'
 export default function Header() {
   return (
     <header className="sticky top-0 z-20 w-full border-b border-line/80 bg-paper/70 backdrop-blur-md">
-      <div className="flex w-full items-center justify-between px-6 py-4 sm:px-8 lg:px-12 xl:px-16">
-        <a href="#top" className="cursor-target font-serif text-lg tracking-tight text-ink">
+      <div className="flex w-full items-center justify-between gap-4 px-6 py-4 sm:px-8 lg:px-12 xl:px-16">
+        <a href="#top" className="cursor-target shrink-0 font-serif text-lg tracking-tight text-ink">
           {site.name}
         </a>
+        <nav className="hidden items-center gap-5 text-sm text-muted md:flex lg:gap-7">
+          {site.nav.map((item) => (
+            <a
+              key={item.href}
+              href={item.href}
+              className="cursor-target transition-colors hover:text-ink"
+            >
+              {item.label}
+            </a>
+          ))}
+        </nav>
         <Magnet padding={40} magnetStrength={3}>
           <StarBorder
             as="a"

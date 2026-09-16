@@ -4,12 +4,16 @@ import { site } from '@/data/site'
 
 export default function Links() {
   return (
-    <section className="py-8 sm:py-12" aria-labelledby="links-heading">
+    <section
+      id="links"
+      className="scroll-mt-24 py-8 sm:py-12"
+      aria-labelledby="links-heading"
+    >
       <h2
         id="links-heading"
         className="mb-6 font-serif text-2xl tracking-tight text-ink sm:text-3xl"
       >
-        Elsewhere
+        更多链接
       </h2>
       <FadeContent duration={700} threshold={0.2}>
         <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">

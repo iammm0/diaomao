@@ -1,11 +1,14 @@
 import ClickSpark from '@/components/react-bits/ClickSpark'
 import LightRays from '@/components/react-bits/LightRays'
 import TargetCursor from '@/components/react-bits/TargetCursor'
+import Education from '@/components/Education'
+import Experience from '@/components/Experience'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import Links from '@/components/Links'
 import Projects from '@/components/Projects'
+import Skills from '@/components/Skills'
 
 export default function App() {
   return (
@@ -38,7 +41,10 @@ export default function App() {
         <div className="mx-auto flex w-full max-w-[90rem] flex-1 flex-col px-6 sm:px-8 lg:px-12 xl:px-16">
           <main className="w-full">
             <Hero />
+            <Experience />
             <Projects />
+            <Skills />
+            <Education />
             <Links />
           </main>
           <Footer />
