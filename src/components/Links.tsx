@@ -16,7 +16,7 @@ export default function Links() {
         更多链接
       </h2>
       <FadeContent duration={700} threshold={0.2}>
-        <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+        <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
           {site.links.map((link) => (
             <li key={link.href}>
               <Magnet padding={60} magnetStrength={4} wrapperClassName="block h-full w-full">

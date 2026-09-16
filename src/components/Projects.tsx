@@ -38,7 +38,7 @@ export default function Projects() {
                 >
                   <article className="relative flex h-full flex-col">
                     <div className="mb-4 flex items-center gap-3">
-                      {'logo' in project && project.logo ? (
+                      {'logo' in project ? (
                         <img
                           src={project.logo}
                           alt={`${project.name} logo`}
@@ -51,10 +51,15 @@ export default function Projects() {
                           aria-hidden
                           className="flex size-11 shrink-0 items-center justify-center rounded-xl border border-line bg-sage-soft font-serif text-lg text-sage"
                         >
-                          {project.name.slice(0, 1).toUpperCase()}
+                          N
                         </div>
                       )}
-                      <h3 className="font-serif text-xl text-ink lg:text-2xl">{project.name}</h3>
+                      <div className="min-w-0">
+                        <h3 className="font-serif text-xl text-ink lg:text-2xl">{project.name}</h3>
+                        {'status' in project && project.status === 'incomplete' ? (
+                          <p className="mt-1 text-xs tracking-wide text-muted">大学 Demo · 未完成</p>
+                        ) : null}
+                      </div>
                     </div>
                     <p className="mt-0 flex-1 text-sm leading-relaxed text-muted lg:text-[0.95rem]">
                       {project.description}
@@ -67,14 +72,16 @@ export default function Projects() {
                       ))}
                     </ul>
                     <div className="mt-5 flex gap-4 text-sm">
-                      <a
-                        href={project.github}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="cursor-target text-ink underline decoration-line underline-offset-4 transition-colors hover:text-sage hover:decoration-sage"
-                      >
-                        GitHub
-                      </a>
+                      {'github' in project && project.github ? (
+                        <a
+                          href={project.github}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="cursor-target text-ink underline decoration-line underline-offset-4 transition-colors hover:text-sage hover:decoration-sage"
+                        >
+                          GitHub
+                        </a>
+                      ) : null}
                       {'url' in project && project.url ? (
                         <a
                           href={project.url}

@@ -203,6 +203,15 @@ export const site = {
       url: 'https://damnagent.org',
       logo: '/logos/damn-agent.svg',
     },
+    {
+      name: 'newtoncard',
+      description:
+        '大学期间的 demo 项目（未完成）。面向自然科学爱好者的灵感交流与卡牌收藏空间，含创意动态与卡牌商城雏形。',
+      tags: ['Demo', 'Next.js', '大学项目'],
+      url: 'https://newtoncard.shop',
+      logo: '/logos/newtoncard.png',
+      status: 'incomplete' as const,
+    },
   ],
   links: [
     {
@@ -229,6 +238,11 @@ export const site = {
       label: 'damnagent.org',
       href: 'https://damnagent.org',
       hint: 'Agent 文档',
+    },
+    {
+      label: 'newtoncard.shop',
+      href: 'https://newtoncard.shop',
+      hint: '大学 Demo（未完成）',
     },
   ],
   nav: [
