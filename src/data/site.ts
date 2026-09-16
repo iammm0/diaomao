@@ -18,6 +18,7 @@ export const site = {
       tags: ['TypeScript', 'Security', 'AI Agent'],
       github: 'https://github.com/iammm0/secbot',
       url: 'https://secbot.site',
+      logo: '/logos/secbot.png',
     },
     {
       name: 'execgo',
@@ -25,6 +26,8 @@ export const site = {
         'An agent-first execution kernel and action harness for reliable tool use.',
       tags: ['Go', 'Runtime', 'Infrastructure'],
       github: 'https://github.com/iammm0/execgo',
+      url: 'https://execgo.site',
+      logo: '/logos/execgo.png',
     },
     {
       name: 'mph-agent',
@@ -33,6 +36,7 @@ export const site = {
       tags: ['Python', 'COMSOL', 'Domain Agent'],
       github: 'https://github.com/iammm0/mph-agent',
       url: 'https://mphagent.site',
+      logo: '/logos/mph-agent.svg',
     },
     {
       name: 'damn-agent',
@@ -40,6 +44,8 @@ export const site = {
         'A Chinese documentation site for understanding, building, and evaluating AI Agent systems.',
       tags: ['MDX', 'Documentation', 'Agent Engineering'],
       github: 'https://github.com/iammm0/damn-agent',
+      url: 'https://damnagent.org',
+      logo: '/logos/damn-agent.svg',
     },
   ],
   links: [
@@ -54,9 +60,19 @@ export const site = {
       hint: 'Security workspace',
     },
     {
+      label: 'execgo.site',
+      href: 'https://execgo.site',
+      hint: 'Execution kernel',
+    },
+    {
       label: 'mphagent.site',
       href: 'https://mphagent.site',
       hint: 'COMSOL agent',
+    },
+    {
+      label: 'damnagent.org',
+      href: 'https://damnagent.org',
+      hint: 'Agent docs',
     },
   ],
 } as const

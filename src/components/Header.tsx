@@ -4,8 +4,8 @@ import { site } from '@/data/site'
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-20 border-b border-line/80 bg-paper/70 backdrop-blur-md">
-      <div className="mx-auto flex max-w-3xl items-center justify-between px-0 py-4">
+    <header className="sticky top-0 z-20 w-full border-b border-line/80 bg-paper/70 backdrop-blur-md">
+      <div className="flex w-full items-center justify-between px-6 py-4 sm:px-8 lg:px-12 xl:px-16">
         <a href="#top" className="cursor-target font-serif text-lg tracking-tight text-ink">
           {site.name}
         </a>

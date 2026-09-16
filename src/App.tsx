@@ -33,14 +33,16 @@ export default function App() {
           pulsating
         />
       </div>
-      <div className="relative z-10 mx-auto flex min-h-svh max-w-3xl flex-col px-6">
+      <div className="relative z-10 flex min-h-svh flex-col">
         <Header />
-        <main>
-          <Hero />
-          <Projects />
-          <Links />
-        </main>
-        <Footer />
+        <div className="mx-auto flex w-full max-w-[90rem] flex-1 flex-col px-6 sm:px-8 lg:px-12 xl:px-16">
+          <main className="w-full">
+            <Hero />
+            <Projects />
+            <Links />
+          </main>
+          <Footer />
+        </div>
       </div>
     </ClickSpark>
   )
